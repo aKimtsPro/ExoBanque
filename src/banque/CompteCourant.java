@@ -1,18 +1,18 @@
 package banque;
 
-public class Compte {
+public class CompteCourant {
 
     private final String numero;
     private double solde;
     private double ligneCredit;
     private Personne titulaire;
 
-    public Compte(String numero, Personne titulaire) {
+    public CompteCourant(String numero, Personne titulaire) {
         this.numero = numero;
         this.titulaire = titulaire;
     }
 
-    public Compte(String numero, Personne titulaire, double ligneCredit) {
+    public CompteCourant(String numero, Personne titulaire, double ligneCredit) {
         this.numero = numero;
         this.titulaire = titulaire;
         this.setLigneCredit( ligneCredit );
